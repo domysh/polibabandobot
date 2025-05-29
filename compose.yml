@@ -1,0 +1,12 @@
+
+services:
+  poliba-bando-bot:
+    build: .
+    environment:
+      - BOT_TOKEN
+      - CHAT_IDS
+      - KEY_TEXT
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+
