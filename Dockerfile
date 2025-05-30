@@ -11,4 +11,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia tutti i file del bot nella directory di lavoro
 COPY . .
 
-CMD ["python", "bot.py"]
+CMD ["python3", "bot.py"]

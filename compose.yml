@@ -1,6 +1,6 @@
 
 services:
-  poliba-bando-bot:
+  bot:
     build: .
     environment:
       - BOT_TOKEN
