@@ -6,6 +6,7 @@ services:
       - BOT_TOKEN
       - CHAT_IDS
       - KEY_TEXT
+      - REFRESH_RATE
     volumes:
       - ./data:/app/data
     restart: unless-stopped

@@ -18,6 +18,8 @@ KEY_TEXT = os.getenv("KEY_TEXT", "").upper()
 if not KEY_TEXT:
     exit("Insert a valid KEY_TEXT")
 
+REFRESH_RATE = int(os.getenv("REFRESH_RATE", "300"))
+
 # Initialize bot
 bot = telebot.TeleBot(BOT_TOKEN)
 
@@ -237,7 +239,7 @@ def main():
         check_for_new_tenders()
         # Wait for 1 hour before checking again
         print(f"Waiting for 1 hour before next check...")
-        time.sleep(3600)  
+        time.sleep(REFRESH_RATE)  
 
 if __name__ == '__main__':
     main()
